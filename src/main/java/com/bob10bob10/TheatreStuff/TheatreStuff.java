@@ -15,16 +15,16 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-@Mod(modid = "theatre", name = "Theatre Stuff", version = "0.1")
+@Mod(modid = "TheatreStuff", name = "Theatre Stuff", version = "1.7.10 - 0.1")
 public class TheatreStuff {
 	
-	public static Item itemMicrophone;
-	public static Item itemMicStand;
-	public static Item itemStaging;
+	//public static Item itemMicrophone;
+	//public static Item itemMicStand;
+	//public static Item itemStaging;
 	public static Block blockStaging;
-	public static Item itemSnacks;
-	public static Item itemCookedSnacks;
-	public static Item itemStaleSnacks;
+	//public static Item itemSnacks;
+	//public static Item itemCookedSnacks;
+	//public static Item itemStaleSnacks;
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event){
@@ -32,24 +32,24 @@ public class TheatreStuff {
 		//config
 		
 		//Items
-		itemMicrophone = new ItemMicrophone().setUnlocalizedName("itemMicrophone").setTextureName("theatre:itemMicrophone").setCreativeTab(tabTheatres);
-		//itemMicStand = new itemMicStand().setUnlocalizedName("itemMicStand").setTextureName("theatre:itemMicStand").setCreativeTab(tabTheatres);
-		itemStaging = new itemStaging().setUnlocalizedName("itemStaging").setTextureName("theatre:itemStaging").setCreativeTab(tabTheatres);
+		//itemMicrophone = new ItemMicrophone().setUnlocalizedName("itemMicrophone").setTextureName("TheatreStuff:itemMicrophone").setCreativeTab(tabTheatres);
+		//itemMicStand = new ItemMicStand().setUnlocalizedName("itemMicStand").setTextureName("TheatreStuff:itemMicStand").setCreativeTab(tabTheatres);
+		//itemStaging = new ItemStaging().setUnlocalizedName("itemStaging").setTextureName("TheatreStuff:itemStaging").setCreativeTab(tabTheatres);
 		//Blocks
-		blockStaging = new BlockStaging(Material.wood).setBlockName("blockStaging").setBlockTextureName("theatre:blockStaging").setCreativeTab(tabTheatres);
+		blockStaging = new BlockStaging(Material.wood).setBlockName("blockStaging").setBlockTextureName("TheatreStuff:blockStaging").setCreativeTab(tabTheatres);
 		//Food
-		itemSnacks = new ItemFood(2, 0.5F, true).setUnlocalizedName("itemSnacks").setTextureName("theatre:itemSnacks").setCreativeTab(tabTheatres);
-		itemCookedSnacks = new ItemFood(6, 0.6F, false).setUnlocalizedName("itemCookedSnacks").setTextureName("theatre:itemCookedSnacks").setCreativeTab(tabTheatres);
+		//itemSnacks = new ItemFood(2, 0.5F, true).setUnlocalizedName("itemSnacks").setTextureName("TheatreStuff:itemSnacks").setCreativeTab(tabTheatres);
+		//itemCookedSnacks = new ItemFood(6, 0.6F, false).setUnlocalizedName("itemCookedSnacks").setTextureName("theatre:itemCookedSnacks").setCreativeTab(tabTheatres);
 		
 		//Items
-		GameRegistry.registerItem(itemMicrophone, itemMicrophone.getUnlocalizedName().substring(5));
+		//GameRegistry.registerItem(itemMicrophone, itemMicrophone.getUnlocalizedName().substring(5));
 		//GameRegistry.registerItem(itemMicStand, itemMicStand.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(itemStaging, itemStaging.getUnlocalizedName().substring(5));
+		//GameRegistry.registerItem(itemStaging, itemStaging.getUnlocalizedName().substring(5));
 		//Blocks
 		GameRegistry.registerBlock(blockStaging, blockStaging.getUnlocalizedName().substring(5));
 		//Food
-		GameRegistry.registerItem(itemSnacks, itemSnacks.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(itemCookedSnacks, itemCookedSnacks.getUnlocalizedName().substring(5));
+		//GameRegistry.registerItem(itemSnacks, itemSnacks.getUnlocalizedName().substring(5));
+		//GameRegistry.registerItem(itemCookedSnacks, itemCookedSnacks.getUnlocalizedName().substring(5));
 
 		
 	}
@@ -57,10 +57,10 @@ public class TheatreStuff {
 	@EventHandler
 	public void Init(FMLInitializationEvent event){
 		//Proxy, TileEntity, Entity, Gui & Packet registering
-		GameRegistry.addRecipe(new ItemStack(blockStaging, 16), new Object[]{"WWW","SWS", "SWS", 'W', Blocks.planks, 'S', Items.stick});
-		GameRegistry.addRecipe(new ItemStack(itemStaging, 3), new Object[]{" WS"," SW","   ", 'W', Blocks.planks, 'S', Items.stick });
+		//GameRegistry.addRecipe(new ItemStack(blockStaging, 16), new Object[]{"WWW","SWS", "SWS", 'W', Blocks.planks, 'S', Items.stick});
+		//GameRegistry.addRecipe(new ItemStack(itemStaging, 3), new Object[]{" WS"," SW","   ", 'W', Blocks.planks, 'S', Items.stick });
 		
-		GameRegistry.addSmelting(itemSnacks, new ItemStack(itemCookedSnacks), 10.0F);
+		//GameRegistry.addSmelting(itemSnacks, new ItemStack(itemCookedSnacks), 10.0F);
 		
 	}
 	
@@ -74,7 +74,7 @@ public class TheatreStuff {
 	public static CreativeTabs tabTheatres = new CreativeTabs("tabTheatres"){
 		@Override
 		public Item getTabIconItem(){
-			return new ItemStack(blockStaging).getItem();
+			return new ItemStack(Items.redstone).getItem();
 		}
 		
 	};

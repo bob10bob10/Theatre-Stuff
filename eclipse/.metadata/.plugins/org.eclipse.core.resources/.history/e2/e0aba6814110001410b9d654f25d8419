@@ -1,0 +1,9 @@
+package reference;
+
+public class Reference {
+
+	public static final String Mod_ID = "TheatreStuff";
+	public static final String Mod_Name = "Theatre Stuff";
+	public static final String Version = "1.7.10 - 0.2";
+	
+}
