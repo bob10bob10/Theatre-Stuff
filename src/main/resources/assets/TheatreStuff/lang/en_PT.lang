@@ -1,0 +1,11 @@
+item.itemMicrophone.name=Singin' Tool
+item.itemMicStand.name=Singin' Post
+item.itemStaging.name=Place O' Work
+
+item.itemSnacks.name=Biscuits
+item.itemCookedSnacks.name=Warm Biscuits
+item.itemStaleSnacks.name=Stale Biscuits
+
+tile.blockStaging.name=Place O' Dance
+
+itemGroup.tabTheatres=Theatre Stuff

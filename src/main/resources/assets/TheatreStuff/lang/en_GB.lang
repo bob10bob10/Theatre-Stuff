@@ -1,0 +1,11 @@
+item.itemMicrophone.name=Microphone
+item.itemMicStand.name=Microphone Stand
+item.itemStaging.name=Staging
+
+item.itemSnacks.name=Snacks
+item.itemCookedSnacks.name=Cooked Snacks
+item.itemStaleSnacks.name=Poisoned Snacks 
+
+tile.blockStaging.name=Staging
+
+itemGroup.tabTheatres=Theatre Stuff

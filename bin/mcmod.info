@@ -1,0 +1,16 @@
+[
+{
+  "modid": "TheatreStuff",
+  "name": "Theatre Stuff",
+  "description": "Bob10bob10 attempts to create a mod for things foung in a theatre",
+  "version": "1.7.10 - 0.1",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["bob10bob10"],
+  "credits": "Thanks to: YOU! For downloading this mod!",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
